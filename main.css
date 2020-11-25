@@ -5,7 +5,7 @@
 
 header {
     background-color: #fb6240;
-    height: 600px;
+    height: 90vh;
     position: relative;
 }
 
@@ -44,5 +44,39 @@ h2 {
     position: absolute;
     top: 290px;
     left: 35px;
+}
+
+/* Work */
+#projects {
+    background-color: #5c1abc;
+}
+
+h3 {
+    color: #fff559;
+    font-size: 3em;
+    padding: 40px 0 30px 0;
+    text-align: center;
+    position: relative;
+}
+
+h4 {
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.projects__subtitle {
+    height: 70px;
+    position: relative;
+}
+
+.projects__underline {
+    background-color: #fff55a;
+    width: 100px;
+    height: 6px;
+    position: absolute;
+    top: 25px;
+    left: 122px;
 }
 
