@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+} 
+
+header {
+    background-color: #fb6240;
+}
+
+#nav-bar {
+    display: none;
+}
+
