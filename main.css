@@ -88,3 +88,30 @@ h4 {
     text-align: center;
 }
 
+.projects__articles {
+    padding-bottom: 80px;
+}
+
+/* Contact */
+#contact {
+    background-color: #f1f5f5;
+    position: relative;
+    height: 300px;
+}
+
+h5 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 50px 0 50px 0;
+    text-align: center; 
+    color: #fb6240;
+}
+
+#contact>p {
+    text-align: left;
+    position: absolute;
+    width: 65%;
+    left: 45px;
+    top: 110px;
+}
+
