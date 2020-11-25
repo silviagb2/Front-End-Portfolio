@@ -16,10 +16,10 @@ header {
 .nav-bar__logo {
     color: white;
     font-weight: 500;
-    font-size: 50px;
+    font-size: 3rem;
     position: absolute;
     left: 20px;
-    top: 8px;
+    top: 7px;
 }
 
 .nav-bar__hamburguer {
@@ -92,11 +92,11 @@ h4 {
     padding-bottom: 80px;
 }
 
-/* Contact */
+/* Footer */
 #contact {
     background-color: #f1f5f5;
     position: relative;
-    height: 300px;
+    height: 240px;
 }
 
 h5 {
@@ -115,3 +115,136 @@ h5 {
     top: 110px;
 }
 
+.footer__icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px 0 100px;
+}
+
+
+.footer__icons>a>img{
+    width: 24px;
+    vertical-align: middle;
+}
+
+@media (min-width: 1024px) {
+    header {
+        height: 100vh;
+    }
+
+    .nav-bar__logo {
+        top: 28px;
+        left: 40px;
+    }
+
+
+    #nav-bar__items {
+        display: inline-block;
+        list-style-type: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .nav-bar__item {
+        display: inline-block;
+        padding: 5px;
+        font-size: 1rem;
+        padding-right: 40px;
+    }
+
+    #nav-bar__items>a {
+        text-decoration: none;
+        color: white; 
+        font-weight: 300;
+    }
+
+    /*.nav-bar__item:hover{
+        height: 30px;
+        background: 
+        linear-gradient(135deg, #fb6240 25%, transparent 25%) -10px 0, linear-gradient(225deg, #fb6240 25%, transparent 25%) -10px 0,
+        linear-gradient(315deg, #fb6240 25%, transparent 25%),
+        linear-gradient(45deg, #fb6240 25%, transparent 25%);
+        background-size: 40px 40px; background-color: #fff559; 
+    }
+    */
+
+    .nav-bar__hamburguer {
+        display: none;
+    }
+
+    h1 {
+        font-size: 8em;
+        top: 230px;
+        left: 400px;
+        line-height: 120px;
+    }
+
+    h2 {
+        color: white;
+        font-weight: 300;
+        position: absolute;
+        top: 480px;
+        left: 400px;
+        font-size: 2rem;
+    }
+
+    /* Work */
+    #projects {
+        height: 150vh;
+    }
+    
+    h3 {
+        font-size: 10em;
+        padding: 80px 0 50px 0;
+    }
+    
+    h4 {
+        font-size: 1rem;
+    }
+    
+    .projects__subtitle {
+        height: 80px;
+        position: relative;
+    }
+    
+    .projects__underline {
+        width: 90px;
+        left: 640px;
+    }
+
+    .project-tile {
+        font-size: 7rem;
+        padding-bottom: 70px;
+    }
+
+    .projects__articles {
+        padding-top: 50px;
+    }
+
+    /* Footer */
+
+    #contact {
+        height: 250px;
+    }
+
+    h5 {
+        font-size: 4rem;
+    }
+
+    #contact>p {
+        left: 510px;
+        top: 140px;
+    }
+
+    .footer__icons {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 630px 0 630px;
+    }
+
+    .footer__icons>a>img{
+        width: 22px;
+    }
+
+}
