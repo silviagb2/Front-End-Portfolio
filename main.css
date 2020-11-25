@@ -5,9 +5,44 @@
 
 header {
     background-color: #fb6240;
+    height: 600px;
+    position: relative;
 }
 
-#nav-bar {
+#nav-bar__items {
     display: none;
+}
+
+.nav-bar__logo {
+    color: white;
+    font-weight: 500;
+    font-size: 50px;
+    position: absolute;
+    left: 20px;
+    top: 8px;
+}
+
+.nav-bar__hamburguer {
+    width: 40px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+h1 {
+    color: #fff559;
+    font-size: 3em;
+    position: absolute;
+    top: 190px;
+    left: 35px;
+    line-height: 45px;
+}
+
+h2 {
+    color: white;
+    font-weight: 100;
+    position: absolute;
+    top: 290px;
+    left: 35px;
 }
 
