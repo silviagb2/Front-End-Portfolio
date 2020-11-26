@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Form.css">
+    <title>Project - Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Welcome!</h1>
+        <h2 id="description">Hello! Many thanks to join us. We would like to know you a little bit more.</h2>
+    </header>
+
+    <main>
+        <form id="survey-form" action="">
+            
+            <div class="q1">
+                <p class="title__q1">Q1</p>
+                <div class="name">
+                    <label for="name" id="name-label">Name</label>
+                    <input id="name" type="text" placeholder="How would you like us to call you?">
+                </div>
+                
+                <div>
+                    <label for="email" id="email-label">E-mail</label>
+                    <input id="email" type="email" placeholder="How can we contact you?">
+                </div>
+                
+                <div>
+                    <label for="age" id="number-label">Age</label>
+                    <input id="number" type="number" min="18" max="100" placeholder="How old are you?">
+                </div>
+            </div>
+
+            <p>
+            <label for="dropdown-situation">Which is your situation?</label>
+            <select name="situation" id="dropdown-situation">
+            <option name="situation" value="working">I'm working</option>
+            <option name="situation" value="studying">I'm working and studying</option>
+            <option name="situation" value="working-and-studying">I'm working and studying</option>
+            <option name="situation" value="none">I'm not working and not studying</option>
+            </select></p>
+
+            <p>Are you a dog or a cat person?</p>
+            <input id="animals__cat" name="animals" value="cat" type="radio">
+            <label for="animals__cat">Cat</label>
+            <input id="animals__dog" name="animals" value="dog" type="radio">
+            <label for="animals__dog">Dog</label>
+            <input id="animals__both" name="animals" value="both" type="radio">
+            <label for="animals__both">I can't choose!</label>
+
+            <p>Which are your interests?</p>
+            <input id="music" name="interests" vale="music" type="checkbox">
+            <label for="music">Music</label>
+            <input id="films" name="interests" value="films" type="checkbox">
+            <label for="films">Films</label>
+            <input id="sports" name="interests" value="sports" type="checkbox">
+            <label for="sports">Sports</label>
+            <input id="travel" name="interests" value="travel" type="checkbox">
+            <label for="travel">Travel</label>
+            <input id="food" name="interests" value="food" type="checkbox">
+            <label for="food">Food</label>
+            <input id="fasion" name="interests" value="fashion" type="checkbox">
+            <label for="fashion">Fashion</label>
+
+            <p><label for="more-info">Tell us whatever you want about you!</label>
+            <textarea name="more-info" id="more-info" cols="30" rows="10"></textarea></p>
+
+            <p><input type="submit"></p>
+        </form>
+    </main>
+</body>
+</html>

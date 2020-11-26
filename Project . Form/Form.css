@@ -1,0 +1,42 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(209, 174, 240);
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin: 0 25px;
+}
+
+#title {
+    font-size: 2.6rem;
+    color: white;
+    margin-bottom: 0;
+}
+
+#description {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.685);
+    margin-top: 10px;
+}
+
+/* Q1 */
+.q1 {
+    background-color: white;
+    height: 600px;
+    width: 90vw;
+    margin-left: 10px;
+
+}
+
+
+
+
+
+
+
+
