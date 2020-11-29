@@ -1,0 +1,85 @@
+* {
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;
+    color: #383325;
+    background-color: #eeeeee;
+}
+
+.intro__title {
+    background-color: #ffe226;
+    padding: 2rem;
+}
+
+#title {
+    color: white;
+    font-weight: 900;
+    font-size: 3.5rem;
+    margin: 20px 0;
+}
+
+#img-div {
+    padding: 20px 0;
+    background-color: white;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+#image {
+    max-width: 100%;
+}
+
+#img-caption {
+    font-size: 0.8rem;
+    padding: 20px 20px 0 20px;
+}
+
+#tribute-info {
+    margin: 0;
+    padding: 2rem 2rem 0 2rem;
+}
+
+.tribute-info__elements {
+    text-align: left;
+    margin: 0 auto 50px auto;
+    line-height: 1.8rem;
+}
+
+.tribute-info__elements>li {
+    margin: 17px 0;
+}
+
+#quote {
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#documentary-netflix {
+    font-size: 1.3rem;
+    width: 85%;
+    margin: 50px auto;
+}
+
+#tribute-link {
+    color: #383325;
+}
+
+@media (min-width:1440px) {
+    .intro__title{
+        padding: 80px 0;
+    }
+    .intro__title>p {
+        width: 50%;
+        margin: 0 auto;
+        font-size: 1.2rem;
+    }
+
+}
+
+
