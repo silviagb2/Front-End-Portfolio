@@ -3,8 +3,15 @@
     font-family: 'Montserrat', sans-serif;
 } 
 
+:root {
+    --yellow: #FDEC0F;
+    --blue: #016EDF;
+    --red: #EF433E;
+    --pink: #FDD6D6;
+}
+
 header {
-    background-color: #fb6240;
+    background-color: var(--pink);
     height: 90vh;
     position: relative;
 }
@@ -14,45 +21,56 @@ header {
 }
 
 .nav-bar__logo {
-    color: white;
-    font-weight: 500;
-    font-size: 3rem;
     position: absolute;
-    left: 20px;
-    top: 7px;
+    left: 28px;
+    top: 18px;
+}
+
+.nav-bar__logo>img {
+    height: 55px;
 }
 
 .nav-bar__hamburguer {
     width: 40px;
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: 25px;
+    top: 28px;
 }
 
 h1 {
-    color: #fff559;
-    font-size: 3em;
+    color: var(--blue);
+    font-size: 3.5em;
     position: absolute;
-    top: 190px;
+    top: 185px;
     left: 35px;
-    line-height: 50px;
+    line-height: 54px;
 }
 
 h2 {
-    color: white;
+    color: black;
     font-weight: 300;
     position: absolute;
     top: 300px;
     left: 35px;
 }
 
+#about_button {
+    display:block;
+    position: absolute;
+    top: 390px;
+    left: 35px;
+    background-color:transparent;
+    border: 1px black solid;
+    padding: 10px 50px;
+}
+
 /* Work */
 #projects {
-    background-color: #5c1abc;
+    background-color: var(--red);
 }
 
 h3 {
-    color: #fff559;
+    color: var(--yellow);
     font-size: 3em;
     padding: 50px 0 50px 0;
     text-align: center;
@@ -60,32 +78,53 @@ h3 {
 }
 
 h4 {
-    color: white;
-    font-weight: 300;
+    color:var(--pink);
+    font-weight: 400;
     text-align: center;
     font-size: 0.8rem;
 }
 
-.projects__subtitle {
+/* .projects__subtitle {
     height: 80px;
     position: relative;
+} */
+
+.projects__subtitle {
+    height: 37px;
+    position: relative;
+    background-image: url(/images/Path-blue.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: 40px;
 }
 
 .projects__underline {
-    background-color: #fff55a;
+    background-color: var(--blue);
     width: 70px;
     height: 6px;
     position: absolute;
     top: 25px;
-    left: 130px;
+    left: 130px; 
+    /* background: #9e978e;
+    margin: 0 1em 1em 0;
+    height: 45px;
+    width: 90px;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 90px; */
 }
 
 .project-tile {
-    color: white;
     font-size: 2.5rem;
     font-weight: 600;
     padding-bottom: 40px;
     text-align: center;
+    margin-top: 20px;
+}
+
+.project-tile>a {
+    text-decoration: none;
+    color: var(--pink);
 }
 
 .projects__articles {
@@ -94,7 +133,7 @@ h4 {
 
 /* Footer */
 #contact {
-    background-color: #f1f5f5;
+    background-color:var(--pink);
     position: relative;
     height: 240px;
 }
@@ -104,7 +143,7 @@ h5 {
     font-weight: 600;
     padding: 50px 0 50px 0;
     text-align: center; 
-    color: #fb6240;
+    color:var(--red);
 }
 
 #contact>p {
@@ -113,16 +152,18 @@ h5 {
     width: 65%;
     left: 45px;
     top: 110px;
+    color: black;
 }
 
 .footer__icons {
     display: flex;
     justify-content: space-between;
     padding: 40px 100px 0 100px;
+    list-style: none;
 }
 
 
-.footer__icons>a>img{
+.footer__icons>li>a>img{
     width: 24px;
     vertical-align: middle;
 }
@@ -133,17 +174,21 @@ h5 {
     }
 
     .nav-bar__logo {
-        top: 28px;
-        left: 40px;
+        top: 30px;
+        left: 60px;
     }
 
+    .nav-bar__logo>img {
+        height: 80px;
+        position:fixed;
+    }
 
     #nav-bar__items {
         display: inline-block;
         list-style-type: none;
         width: 100%;
         text-align: center;
-        margin-top: 40px;
+        margin-top: 70px;
     }
 
     .nav-bar__item {
@@ -155,19 +200,20 @@ h5 {
 
     #nav-bar__items>a {
         text-decoration: none;
-        color: white; 
+        color: black; 
         font-weight: 300;
+
     }
 
-    /*.nav-bar__item:hover{
-        height: 30px;
-        background: 
-        linear-gradient(135deg, #fb6240 25%, transparent 25%) -10px 0, linear-gradient(225deg, #fb6240 25%, transparent 25%) -10px 0,
-        linear-gradient(315deg, #fb6240 25%, transparent 25%),
-        linear-gradient(45deg, #fb6240 25%, transparent 25%);
-        background-size: 40px 40px; background-color: #fff559; 
+    .nav-bar__item>li:hover{
+    background-image: url(/images/Path-yellow-2.svg);
+    background-size: 45px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
     }
-    */
+
 
     .nav-bar__hamburguer {
         display: none;
@@ -177,11 +223,11 @@ h5 {
         font-size: 8em;
         top: 230px;
         left: 400px;
-        line-height: 120px;
+        line-height: 122px;
     }
 
     h2 {
-        color: white;
+        color: black;
         font-weight: 300;
         position: absolute;
         top: 480px;
@@ -189,9 +235,16 @@ h5 {
         font-size: 2rem;
     }
 
+    #about_button {
+        top: 570px;
+        left: 400px;
+        padding: 12px 60px;
+        font-size: 1rem;
+    }
+
     /* Work */
     #projects {
-        height: 150vh;
+        height: 170vh;
     }
     
     h3 {
@@ -204,22 +257,43 @@ h5 {
     }
     
     .projects__subtitle {
-        height: 80px;
+        height: 50px;
         position: relative;
+        background-image: url(/images/Path-blue.svg);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: bottom;
+        background-size: 60px;
     }
     
-    .projects__underline {
+    /* .projects__underline {
         width: 90px;
         left: 640px;
-    }
+    } */
 
     .project-tile {
         font-size: 7rem;
-        padding-bottom: 70px;
+        padding: 50px;
     }
 
     .projects__articles {
         padding-top: 50px;
+    }
+
+    .tribute:hover {
+        background-image: url(/images/Grammy.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .tribute:hover>a>.tribute-title {
+        transform: scale(1.6);
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.411);
+    }
+
+    .tribute:hover~.project-tile>a {
+        color: rgba(255, 255, 255, 0.342);
     }
 
     /* Footer */

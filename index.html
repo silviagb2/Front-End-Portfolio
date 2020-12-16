@@ -6,15 +6,17 @@
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
     <title>Porfolio - Silvia Gutierrez</title>
 </head>
 <body>
     <header>
         <nav id="nav-bar">
-            <p class="nav-bar__logo">S</p>
+            <a href="#nav-bar" class="nav-bar__logo"> <img src="/images/Logo-portfolio.svg" alt="Logo Silvia"></a>
             <a href="#nav-bar__item"><img class="nav-bar__hamburguer" src="/images/Hambuerguer.svg" alt="Hamburguer menu"></a>
             <ul id="nav-bar__items">
-                <a class="nav-bar__item" href="#nav-bar"><li>ABOUT</li></a>
+                <a class="nav-bar__item" href="#nav-bar"><li>ABOUT  ME</li></a>
                 <a class="nav-bar__item" href="#projects"><li>WORK</li></a>
                 <a class="nav-bar__item" href="#contact"><li>CONTACT</li></a>
             </ul>
@@ -25,6 +27,7 @@
                     I'm Silvia.</h1>
                 <h2>Front-End developer and lifelong learner.</h2>
             </div>
+            <button id="about_button">ABOUT ME</button>
         </section>
     </header>
 
@@ -33,12 +36,21 @@
             <h3>Work.</h3>
             <div class="projects__subtitle">
                 <h4>SELECT PROJECTS</h4>
-                <p class="projects__underline"></p>
+                <!-- <p class="projects__underline"></p> -->
             </div>
             <div class="projects__articles">
-                <article class="project-tile">Tribute</article>
-                <article class="project-tile">Survey</article>
-                <article class="project-tile">Thecnical Doc</article>
+
+                <article class="project-tile tribute">
+                    <a target="blank" href="/Project-Tribute/tribute.html"><p class=tribute-title>Tribute</p></a>
+                </article>
+
+                <article class="project-tile survey">
+                    <a target="blank" href="/Project-Form/Form.html"><p class="survey-title">Survey</p></a>
+                </article>
+
+                <article class="project-tile">
+                    <a target="blank" href="/Project-Thecnical-Doc/Thecnical-Doc.html"><p class="thecnical-title">Thecnical Doc</p></a>
+                </article>
             </div>
         </section>
     </main>
@@ -48,10 +60,16 @@
             <p>Get in touch for opportunities
                 or just to say hi! 👋</p>
 
-            <div class="footer__icons">
-                <a href="mailto:silviagb2@gmail.com"><img src="/images/Mail.svg" alt="Mail icon"></a>
-                <a href="https://www.linkedin.com/in/silviagb/"><img src="https://simpleicon.com/wp-content/uploads/linkedin.png" alt="LinkedIn icon"></a>
-                <a href="https://github.com/silviagb2"><img src="https://image.flaticon.com/icons/png/512/25/25231.png" alt="Github icon"></a>
+            <ul class="footer__icons">
+                <li>
+                    <a href="mailto:silviagb2@gmail.com"><img src="/images/Mail.svg" alt="Mail icon"></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/silviagb/"><img src="https://simpleicon.com/wp-content/uploads/linkedin.png" alt="LinkedIn icon"></a>
+                </li>
+                <li>
+                    <a href="https://github.com/silviagb2"><img src="https://image.flaticon.com/icons/png/512/25/25231.png" alt="Github icon"></a>
+                </li>
             </div>
         
         </section>
